@@ -1,0 +1,7 @@
+test
+.jshintrc
+Makefile
+node_modules
+.DS_Store
+.jshintignore
+docs

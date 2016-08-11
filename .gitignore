@@ -1,0 +1,12 @@
+node_modules
+# Eclipse configuration #
+.settings
+.classpath
+.buildpath
+*.log
+target
+.target
+pids
+.idea
+.beans
+.cache

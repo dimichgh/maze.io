@@ -1,0 +1,41 @@
+{
+  "name": "app-pilot",
+  "version": "1.0.0",
+  "description": "The module provides auto-pilot pattern for nodejs apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 15s test"
+  },
+  "keywords": [
+    "app-pilot",
+    "auto-pilot",
+    "microservice",
+    "service"
+  ],
+  "author": "Dmytro Semenov <dsemenov@ebay.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "async": "^2.0.0",
+    "asyncawait": "^1.0.6",
+    "debug": "^2.2.0",
+    "fast-safe-stringify": "^1.0.9",
+    "gc-stats": "^1.0.0",
+    "jsonic": "^0.2.2",
+    "lodash": "^4.14.1",
+    "measured": "^1.1.0",
+    "raptor-async": "^1.1.3",
+    "request-local": "^1.0.3",
+    "seneca": "^2.1.0",
+    "seneca-balance-client": "git+http://github.com/rjrodger/seneca-balance-client",
+    "seneca-demo-logger": "git+http://github.com/rjrodger/seneca-demo-logger",
+    "seneca-mesh": "^0.7.0",
+    "try-require": "^1.2.1",
+    "usage": "^0.7.1"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "mocha": "^2.5.3",
+    "supertest": "^1.2.0",
+    "wreck": "^8.0.0"
+  }
+}

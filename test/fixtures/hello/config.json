@@ -1,0 +1,5 @@
+{
+    "module": "./index.js",
+    "api": "./api.js",
+    "port": 6667
+}
