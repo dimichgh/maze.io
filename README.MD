@@ -5,11 +5,12 @@ Microservice framework based on Seneca microservice framework for bootstrapping 
 
 ### Provides
 
-* Sensors to metrics collectors via http
-* Propagates log context back and forth between http/https calls for tracking purposes
-* Provide health check for itself via http
-* Exposes predefined API as a stats API accessible via seneca-mesh network
-* Should limit incoming request to local (configurable)
+* Sensors for metrics collectors via http
+* Propagates flow/request context across the call chain for tracking/logging
+* Health check for itself via http
+* Guard against uncaught errors, logging and shutdown cycle
+* Stats API accessible via seneca-mesh network
+* Too busy handler that limits incoming requests
 
 ### Usage
 
