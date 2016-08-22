@@ -1,3 +1,4 @@
 'use strict';
 
-// monitors business of the module
+// monitors process load
+// monitors memory limit
