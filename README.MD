@@ -1,7 +1,7 @@
 maze.io
 ==========
 
-Microservice framework based on Seneca microservice framework for bootstrapping your application code
+Microservice framework based on Seneca microservice framework for bootstrapping your application code into the world of microservices.
 
 ### Provides
 
@@ -66,7 +66,7 @@ In contrast to the existing load balancing methods for the services, the network
 
 * The mesh network allows each member to be an entry point to join the network.
 Given that to guarantee stability/integrity of the whole system each member can expose fixed port to link to static LB with static cname to use for auto-discovery by new members.
-* If there are dedicated boxes used as a bases, they still need to use LB to re-discover the network in case all bases went down. 
+* If there are dedicated boxes used as a bases, they still need to use LB to re-discover the network in case all bases went down.
 * Or the base should be smarter to preserve the targets to connect to when it restarts to avoid some member staying in their own segment after all the bases are restarted.
 
 #### Service invocation
