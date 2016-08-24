@@ -16,6 +16,8 @@ Microservice framework based on Seneca microservice framework for bootstrapping 
 
 ### Usage
 
+TBD
+
 ### Architecture
 
 The system is based on mesh network architecture that allows to forms virtual networks that do provide service discovering and automatic management of services that need to join/disconnect/went dead.
@@ -54,6 +56,10 @@ To provide the same level of control that modern load balancer provide to the OP
 
 Since mesh network represents the whole system, it can act as distributes cache in addition to main purpose as long as they all provide a specific API to store/retrieve the values.
 
+#### configuration
+
+TBD
+
 #### Security
 
 The network should provide security feature to control who can join the netowork.
@@ -66,7 +72,7 @@ The client load balancing relies on seneca balance client.
 
 In contrast to the existing load balancing methods for the services, the network can provide the feature where the services can be made smarter and based on how busy they are they may regulate the incoming traffic by disconnecting from the mesh network till they finish with a backlog of tasks and then re-joining the network afterwards.
 
-#### Service discovery, seeding network
+#### Service discovery, network seeding
 
 * The mesh network allows each member to be an entry point to join the network.
 Given that to guarantee stability/integrity of the whole system each member can expose fixed port to link to static LB with static cname to use for auto-discovery by new members.
@@ -94,13 +100,15 @@ The simplest way is to channel all the logs into the aggregation endpoint
 * Email notifications for critical errors/uncaught exceptions/oom/restarts
 * Automatic action for the specific errors, like restarts or notifications
 
-#### Reporting
+#### Metrics reporting
 
 * Process stats
 * Service metrics
 * Custom metrics
 
 ### Advanced
+
+TBD
 
 #### TODO:
 * grpc transport
