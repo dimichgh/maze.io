@@ -5,12 +5,14 @@ Microservice framework based on Seneca microservice framework for bootstrapping 
 
 ### Provides
 
+* Bootstrapping of the application into microservice environment
 * Sensors for metrics collectors via http
 * Propagates flow/request context across the call chain for tracking/logging
-* Health check for itself via http
+* Tracing of the requests
+* Components health checks
 * Guard against uncaught errors, logging and shutdown cycle
-* Stats API accessible via seneca-mesh network
-* Too busy handler that limits incoming requests
+* Stats API accessible via http/seneca-mesh network
+* Too busy logic to manage incoming traffic
 
 ### Usage
 
@@ -38,6 +40,8 @@ TBD
 
 ###### Custom metrics
 
+TBD
+
 ##### Health-checks
 
 Health-checks of each component can be grouped into group states that can be used for example to monitor critical components as a single entity.
@@ -62,7 +66,7 @@ The client load balancing relies on seneca balance client.
 
 In contrast to the existing load balancing methods for the services, the network can provide the feature where the services can be made smarter and based on how busy they are they may regulate the incoming traffic by disconnecting from the mesh network till they finish with a backlog of tasks and then re-joining the network afterwards.
 
-#### Service discovery
+#### Service discovery, seeding network
 
 * The mesh network allows each member to be an entry point to join the network.
 Given that to guarantee stability/integrity of the whole system each member can expose fixed port to link to static LB with static cname to use for auto-discovery by new members.
@@ -81,6 +85,8 @@ The network components should propagate the main request context via correlation
 
 #### Logging
 
+The simplest way is to channel all the logs into the aggregation endpoint
+
 #### Monitoring
 
 * Log analysis with automatic alerts for specific events at aggregation level
@@ -95,8 +101,6 @@ The network components should propagate the main request context via correlation
 * Custom metrics
 
 ### Advanced
-
-#### Seeding network
 
 #### TODO:
 * grpc transport
