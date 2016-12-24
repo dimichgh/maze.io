@@ -20,7 +20,7 @@ TBD
 
 ### Architecture
 
-The system is based on mesh network architecture that allows to forms virtual networks that do provide service discovering and automatic management of services that need to join/disconnect/went dead.
+The system can be based on mesh network architecture that allows to form virtual networks that can provide service discovering and automatic management of services that need to join/disconnect/went dead or using standard open-source service discovery solutions.
 
 The mesh network of all members acts as a virtual entity that provides:
 * state of each service/component
