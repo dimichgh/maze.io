@@ -1,7 +1,7 @@
 maze.io
 ==========
 
-Microservice framework based on Seneca microservice framework for bootstrapping your application code into the world of microservices.
+Microservice framework microservice framework for bootstrapping your application code into the world of microservices.
 
 ### Provides
 
