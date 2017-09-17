@@ -1,6 +1,8 @@
 maze.io
 ==========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dimichgh/maze.io.svg)](https://greenkeeper.io/)
+
 Microservice framework microservice framework for bootstrapping your application code into the world of microservices.
 
 ### Provides
